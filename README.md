@@ -1,68 +1,30 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# haroldasvaranauskas.com
 
-## Available Scripts
+Welcome to my personal website! This is where I showcase my work, share my thoughts, and connect with others. Feel free to explore and get to know me better.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Blog](#blog)
+- [Contact](#contact)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About Me
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+In this section, you can provide a brief introduction about yourself. Talk about your background, skills, and interests. Let visitors know what makes you unique and why they should be interested in your work.
 
-### `npm test`
+## Projects
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Here, you can list and describe the projects you have worked on. Include links to the live demos or repositories, and provide a brief overview of each project. You can also mention the technologies you used and any challenges you faced during development.
 
-### `npm run build`
+## Blog
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you maintain a blog, you can use this section to highlight some of your recent blog posts. Provide a short description of each post and include a link to read the full article. This will give visitors a glimpse into your thoughts and expertise.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In this section, provide information on how visitors can get in touch with you. You can include your email address, social media profiles, or any other preferred method of contact. Encourage visitors to reach out for collaboration opportunities or to simply connect with you.
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If you want to specify the license for your website's code or content, you can include a license section at the end. Choose a license that suits your needs and provide a brief description of its terms.
