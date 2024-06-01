@@ -1,5 +1,5 @@
 import WithSubnavigation from "../components/NavBar";
-
+import AppFooter from "../components/AppFooter";
 function Certifications() {
     return (
       <>
@@ -7,6 +7,7 @@ function Certifications() {
        <div>
         <h1>Certifications</h1>
       </div>
+      <AppFooter />
       </>
      
     );

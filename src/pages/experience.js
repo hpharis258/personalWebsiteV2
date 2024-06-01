@@ -1,4 +1,5 @@
 import WithSubnavigation from "../components/NavBar";
+import AppFooter from "../components/AppFooter";
 function Experience() {
     return (
       <>
@@ -6,6 +7,7 @@ function Experience() {
        <div>
         <h1>Experience</h1>
       </div>
+      <AppFooter />
       </>
      
     );

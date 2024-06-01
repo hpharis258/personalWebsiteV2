@@ -1,4 +1,5 @@
 import WithSubnavigation from "../components/NavBar";
+import AppFooter from "../components/AppFooter";
 function Education() {
     return (
       <>
@@ -6,6 +7,7 @@ function Education() {
        <div>
         <h1>Education</h1>
       </div>
+      <AppFooter />
       </>
      
     );
