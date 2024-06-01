@@ -1,5 +1,5 @@
 import WithSubnavigation from "../components/NavBar";
-
+import AppFooter from "../components/AppFooter";
 function Contact() {
     return (
       <>
@@ -7,6 +7,7 @@ function Contact() {
        <div>
         <h1>Contact</h1>
       </div>
+      <AppFooter />
       </>
      
     );

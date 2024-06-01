@@ -15,6 +15,7 @@ import Posts from './pages/posts';
 import Contact from './pages/contact';
 import About from './pages/about';
 import '../src/CDN/app.css';
+import Cookies from './pages/cookies';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/cookies",
+    element: <Cookies />,
   },
 ]);
 

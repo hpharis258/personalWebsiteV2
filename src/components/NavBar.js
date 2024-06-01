@@ -7,6 +7,7 @@ import {
   import Nav from 'react-bootstrap/Nav';
   import Navbar from 'react-bootstrap/Navbar';
   import NavDropdown from 'react-bootstrap/NavDropdown';
+  import CookieConsent from "react-cookie-consent";
   
   export default function WithSubnavigation() {
     return (
@@ -31,7 +32,7 @@ import {
             <div  className="bg-success bg-gradient bg-opacity-80">
                 </div>
             <NavDropdown menuVariant='Secondary'  title="More Information" id="basic-nav-dropdown">
-              <NavDropdown.Item className='dropDownLink' href="#action/3.1">GDPR and Cookies</NavDropdown.Item>
+              <NavDropdown.Item className='dropDownLink' href="/cookies">GDPR and Cookies</NavDropdown.Item>
               <NavDropdown.Divider  />
               <NavDropdown.Item className='dropDownLink' href="https://buymeacoffee.com/haroldas">Buy me a coffe</NavDropdown.Item>
               
@@ -43,20 +44,18 @@ import {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <CookieConsent
+  location="bottom"
+  buttonText="Agree"
+  cookieName="haroldasvaranauskas.com"
+  style={{ background: "#2B373B" }}
+  buttonStyle={{ color: "#4e503b", fontSize: "26px" }}
+  expires={150}
+>
+  This website uses cookies to enhance the user experience.{" "}
+  <span style={{ fontSize: "10px" }}>If you aggree with the Cookie and GDPR policy press agree. These can be found: More Information {'->'} GDPR and Cookies </span>
+</CookieConsent>
     </ChakraBaseProvider>
-        {/* <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-            <Flex w={'80%'} h={60} alignItems={'center'} justifyContent={'space-between'}>
-                <Link href='/'>Home</Link>
-                <Link href='/education'>Education</Link>
-                <Link href='/experience'>Experience</Link>
-                <Link href='/certifications'>Certifications</Link>
-                <Link href='/projects'>Fun Projects</Link>
-                <Link href='/youtube'>Youtube</Link>
-                <Link href='/posts'>Posts</Link>
-                <Link href='/contact'>Contact</Link>
-                <Link href='/about'>About</Link>
-            </Flex>
-            </Box> */}
         </>
     );
 }
