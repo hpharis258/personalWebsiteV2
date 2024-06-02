@@ -16,7 +16,7 @@ function Home() {
     <>
     <WithSubnavigation />
     <ToastContainer position='middle-center'>
-    <Toast bg='success' onClose={() => setShowToast(!showToast)} show={showToast} style={{marginBottom: '35%', marginLeft: '25%'}} className='w-50'>
+    <Toast bg='success' onClose={() => setShowToast(!showToast)} show={showToast} style={{marginBottom: '35%', marginLeft: '25%'}} className='w-75'>
       <Toast.Header>
         
         <strong className="me-auto"><h3>Hi my name is Haroldas!</h3></strong>
@@ -44,7 +44,6 @@ function Home() {
     <div className='d-flex justify-content-center'>
   <Button style={{position: 'relative', top: -280}} onClick={() => setShowToast(!showToast)}>Show Message!</Button>
   </div>
-   
      
     <AppFooter />
     </>

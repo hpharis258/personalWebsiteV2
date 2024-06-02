@@ -4,8 +4,9 @@ function Projects() {
     return (
       <>
       <WithSubnavigation />
-       <div>
+       <div className="container">
         <h1>Projects</h1>
+        <p>This page shows some of the latest side projects that I have created.</p>
       </div>
       <AppFooter />
       </>
