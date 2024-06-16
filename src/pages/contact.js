@@ -83,7 +83,7 @@ function Contact() {
     return (
       <>
       <WithSubnavigation />
-       <div className="container" style={{marginBottom: '25%', marginTop: 20}}>
+       <div className="container vh-100" style={{marginBottom: '25%', marginTop: 20}}>
         <h1>Contact</h1>
             <Form>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

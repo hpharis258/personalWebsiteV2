@@ -29,7 +29,7 @@ function Home() {
   </ToastContainer>
  
  
-    <div className='container'>
+    <div className='container vh-100'>
         <Canvas>
             <ambientLight intensity={0.5} />
             <OrbitControls enableZoom={false} enableRotate={true} enablePan={false} />
