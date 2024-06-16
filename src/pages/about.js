@@ -5,7 +5,7 @@ function About() {
     return (
       <>
       <WithSubnavigation />
-       <div className='container vh-100'  style={{ marginTop: 20}}>
+       <div className='container vh-100'  style={{ marginTop: 20, marginBottom: 400}}>
         <h1>About</h1>
         <p>This page shows some information about me and reasons why I have this personal website.</p>
 
