@@ -7,7 +7,7 @@ function Certifications() {
       <WithSubnavigation />
        <div className="container">
         <h1>Certifications</h1>
-        <div style={{marginBottom: 20}} className="card w-50">
+        <div style={{marginBottom: 20}} className="card">
           <div className="card-header">
             <h3>Microsoft Certified: Azure Developer Associate</h3>
           </div>
@@ -34,7 +34,7 @@ function Certifications() {
                 </div> 
           </div>
         </div>
-        <div style={{marginBottom: 20}} className="card w-50">
+        <div style={{marginBottom: 20}} className="card">
           <div className="card-header">
             <h3>Microsoft Certified: Dynamics 365 Fundamentals (ERP)</h3>
           </div>
@@ -59,7 +59,7 @@ function Certifications() {
                 </div> 
           </div>
         </div>
-        <div style={{marginBottom: 20}} className="card w-50">
+        <div style={{marginBottom: 20}} className="card">
           <div className="card-header">
             <h3>Microsoft Certified: Dynamics 365 Fundamentals (CRM)</h3>
           </div>
@@ -84,7 +84,7 @@ function Certifications() {
                 </div> 
           </div>
         </div>
-        <div style={{marginBottom: 20}} className="card w-50">
+        <div style={{marginBottom: 20}} className="card ">
           <div className="card-header">
             <h3>Microsoft Certified: Azure AI Fundamentals</h3>
           </div>
@@ -109,7 +109,7 @@ function Certifications() {
                 </div> 
           </div>
         </div>
-        <div style={{marginBottom: 20}} className="card w-50">
+        <div style={{marginBottom: 20}} className="card">
           <div className="card-header">
             <h3>AWS Certified Cloud Practitioner</h3>
           </div>
@@ -137,7 +137,7 @@ function Certifications() {
           </div>
         </div>
         
-        <div style={{marginBottom: 20}} className="card w-50">
+        <div style={{marginBottom: 20}} className="card ">
           <div className="card-header">
             <h3>Microsoft Certified: Azure Fundamentals</h3>
           </div>

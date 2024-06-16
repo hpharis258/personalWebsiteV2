@@ -45,7 +45,7 @@ function Education() {
         <h1>Education</h1>
         <ul>
           {education.map(education => (
-           <Card style={{ width: '50rem', marginBottom: 20}} key={education.id}>
+           <Card style={{ marginBottom: 20}} key={education.id}>
             <div className="card-header">
             <h1>{education.name}</h1>
             </div>
