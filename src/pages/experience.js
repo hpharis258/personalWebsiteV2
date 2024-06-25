@@ -65,8 +65,10 @@ function Experience() {
           ))}
         </ul>
        
+      </div> 
+      <div style={{marginTop: '100%', position: 'relative'}}>
+        <AppFooter />
       </div>
-      <AppFooter />
       </>
      
     );

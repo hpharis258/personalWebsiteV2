@@ -33,7 +33,7 @@ function Education() {
        <div className="container vh-100">
         <h1>Loading...</h1>
       </div>
-      <AppFooter />
+     
       </>
      
     )
@@ -41,7 +41,7 @@ function Education() {
     return (
       <>
       <WithSubnavigation />
-      <div className="container vh-100">
+      <div className="container vh-100" style={{minHeight: '100vh'}}>
         <h1>Education</h1>
         <ul>
           {education.map(education => (
@@ -64,8 +64,12 @@ function Education() {
             
           ))}
         </ul>
+       
       </div>
-      <AppFooter />
+      <div style={{marginTop: '100%', position: 'relative'}}>
+        <AppFooter />
+      </div>
+    
       </>
      
     );
