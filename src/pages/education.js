@@ -41,7 +41,7 @@ function Education() {
     return (
       <>
       <WithSubnavigation />
-      <div className="container">
+      <div className="container vh-100">
         <h1>Education</h1>
         <ul>
           {education.map(education => (

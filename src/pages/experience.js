@@ -38,7 +38,7 @@ function Experience() {
     return (
       <>
       <WithSubnavigation />
-      <div className="container">
+      <div className="container vh-100">
         <h1>Experience</h1>
         <ul>
           {experience.map(experience => (
