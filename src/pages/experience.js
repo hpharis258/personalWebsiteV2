@@ -38,7 +38,7 @@ function Experience() {
     return (
       <>
       <WithSubnavigation />
-      <div className="container vh-100">
+      <div className="container" style={{height: 'max-content'}}>
         <h1>Experience</h1>
         <ul>
           {experience.map(experience => (
@@ -66,7 +66,7 @@ function Experience() {
         </ul>
        
       </div> 
-      <div style={{marginTop: '100%', position: 'relative'}}>
+      <div >
         <AppFooter />
       </div>
       </>

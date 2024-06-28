@@ -41,7 +41,7 @@ function Education() {
     return (
       <>
       <WithSubnavigation />
-      <div className="container vh-100" style={{minHeight: '100vh'}}>
+      <div className="container" style={{height: 'max-content'}}>
         <h1>Education</h1>
         <ul>
           {education.map(education => (
@@ -66,7 +66,7 @@ function Education() {
         </ul>
        
       </div>
-      <div style={{marginTop: '100%', position: 'relative'}}>
+      <div >
         <AppFooter />
       </div>
     
