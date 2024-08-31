@@ -6,7 +6,34 @@ function Certifications() {
       <>
       <WithSubnavigation />
        <div className="container">
-        <h1>Certifications</h1>
+        <h1>Azure Certifications</h1>
+        <div style={{marginBottom: 20}} className="card">
+          <div className="card-header">
+            <h3>Microsoft Certified: DevOps Engineer Expert</h3>
+          </div>
+          <div className="card-body">
+            <div className="d-flex">
+
+         
+              <img style={{height: 200}} src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.svg"></img>
+              <div>
+                  <h4>Skills</h4>  
+                      <ul>
+                          <li>Design and implement processes and communications</li>
+                          <li>Design and implement a source control strategy</li>
+                          <li>Design and implement build and release pipelines</li>
+                          <li>Develop a security and compliance plan</li>
+                          <li>Implement an instrumentation strategy</li>
+                         
+                      </ul>
+              </div>
+            
+              </div>   
+              <div className="card-footer">
+                <Link style={{padding: 10, borderRadius: 5}} className="bg-success bg-gradient bg-opacity-80" to="https://learn.microsoft.com/en-us/users/haroldasvaranauskas-8375/credentials/abe6aef50ad9515d?ref=https%3A%2F%2Fwww.linkedin.com%2F">Learn More</Link>
+                </div> 
+          </div>
+        </div>
         <div style={{marginBottom: 20}} className="card">
           <div className="card-header">
             <h3>Microsoft Certified: Azure Developer Associate</h3>
@@ -109,34 +136,6 @@ function Certifications() {
                 </div> 
           </div>
         </div>
-        <div style={{marginBottom: 20}} className="card">
-          <div className="card-header">
-            <h3>AWS Certified Cloud Practitioner</h3>
-          </div>
-          <div className="card-body">
-            <div className="d-flex">
-
-         
-              <img style={{height: 200}} src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"></img>
-              <div>
-                  <h4>Skills</h4>  
-                      <ul>
-                          <li>Amazon Web Services</li>
-                          <li>AWS</li>
-                          <li>Cloud Computing</li>
-                          <li>Cloud Security</li>
-                          <li>Cloud Services</li>
-                          <li>Cloud Storage</li>
-                      </ul>
-              </div>
-            
-              </div>   
-              <div className="card-footer">
-                <Link style={{padding: 10, borderRadius: 5}} className="bg-success bg-gradient bg-opacity-80" to="https://www.credly.com/badges/ce2bcdce-1124-4e62-a25d-68394c5e8f8c/public_url">Learn More</Link>
-                </div> 
-          </div>
-        </div>
-        
         <div style={{marginBottom: 20}} className="card ">
           <div className="card-header">
             <h3>Microsoft Certified: Azure Fundamentals</h3>
@@ -165,6 +164,35 @@ function Certifications() {
                 </div> 
           </div>
         </div>
+        <h1>AWS Certifications</h1>
+        <div style={{marginBottom: 20}} className="card">
+          <div className="card-header">
+            <h3>AWS Certified Cloud Practitioner</h3>
+          </div>
+          <div className="card-body">
+            <div className="d-flex">
+
+         
+              <img style={{height: 200}} src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"></img>
+              <div>
+                  <h4>Skills</h4>  
+                      <ul>
+                          <li>Amazon Web Services</li>
+                          <li>AWS</li>
+                          <li>Cloud Computing</li>
+                          <li>Cloud Security</li>
+                          <li>Cloud Services</li>
+                          <li>Cloud Storage</li>
+                      </ul>
+              </div>
+            
+              </div>   
+              <div className="card-footer">
+                <Link style={{padding: 10, borderRadius: 5}} className="bg-success bg-gradient bg-opacity-80" to="https://www.credly.com/badges/ce2bcdce-1124-4e62-a25d-68394c5e8f8c/public_url">Learn More</Link>
+                </div> 
+          </div>
+        </div>
+        
       </div>
       <AppFooter />
       </>
