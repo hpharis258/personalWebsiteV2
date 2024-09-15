@@ -19,7 +19,7 @@ const AppFooter = () => {
                         <Nav.Link href="/education">Education</Nav.Link>
             <Nav.Link href="/experience">Experience</Nav.Link>
             <Nav.Link href="/certifications">Certifications</Nav.Link>
-            <Nav.Link href="/projects">Fun Projects</Nav.Link>
+            <Nav.Link href="/projects"> Projects</Nav.Link>
             <Nav.Link href="/youtube">Youtube</Nav.Link>
             <Nav.Link href="/posts">Posts</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>

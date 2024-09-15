@@ -5,8 +5,8 @@ function Posts() {
     return (
       <>
       <WithSubnavigation />
-       <div>
-        <h1>Posts</h1>
+      <div className='container vh-100'>
+        <h1>Comming Soon...</h1>
       </div>
       <AppFooter />
       </>

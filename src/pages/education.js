@@ -50,7 +50,7 @@ function Education() {
             <h1>{education.name}</h1>
             </div>
             <div className="card-body">
-            <img src={education.logoURL} />
+            <img style={{maxWidth: "200px"}} src={education.logoURL} />
             <h2>{education.course}</h2>
             </div>
             
