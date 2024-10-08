@@ -6,7 +6,8 @@ function Posts() {
       <>
       <WithSubnavigation />
       <div className='container vh-100'>
-        <h1>Comming Soon...</h1>
+      <iframe src="https://widget.tagembed.com/2131396" style={{width: "100%", height: "100%"}}></iframe>
+
       </div>
       <AppFooter />
       </>
