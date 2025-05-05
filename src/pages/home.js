@@ -11,45 +11,71 @@ import { useState } from 'react';
 import { Button } from 'reactstrap';
 
 function Home() {
-  const [showToast, setShowToast] = useState(true);  
+  const [showToast, setShowToast] = useState(true);
+  const [date, setDate] = useState(new Date());
   return (
     <>
-    <WithSubnavigation />
-    <ToastContainer position='middle-center'>
-    <Toast bg='success' onClose={() => setShowToast(!showToast)} show={showToast} style={{marginBottom: '35%', marginLeft: '25%'}} className='w-75'>
-      <Toast.Header>
-        
-        <strong className="me-auto"><h3>Hi my name is Haroldas!</h3></strong>
-        <small>25 years ago</small>
-      </Toast.Header>
-      <Toast.Body>     <p className='fs-6'>I am an experienced software developer with cloud expertise, I excel in designing, developing, and deploying applications that cater to businesses and users. Leveraging cloud technologies, I deliver scalable solutions accessible globally.</p>
-</Toast.Body>
+      <WithSubnavigation />
+      <ToastContainer position="middle-center">
+        <Toast
+          bg="success"
+          onClose={() => setShowToast(!showToast)}
+          show={showToast}
+          style={{ marginBottom: '35%', marginLeft: '25%' }}
+          className="w-75"
+        >
+          <Toast.Header>
+            <strong className="me-auto">
+              <h3>Hi my name is Haroldas!</h3>
+            </strong>
+            <small>
+              {date.toLocaleDateString('en-GB', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </small>
+          </Toast.Header>
+          <Toast.Body>
+            {' '}
+            <p className="fs-6">
+              I am an experienced software developer with cloud expertise, I
+              excel in designing, developing, and deploying applications that
+              cater to businesses and users. Leveraging cloud technologies, I
+              deliver scalable solutions accessible globally.
+            </p>
+          </Toast.Body>
+        </Toast>
+      </ToastContainer>
 
-    </Toast>
-  </ToastContainer>
- 
- 
-    <div className='container vh-100'>
+      <div className="container vh-100">
         <Canvas>
-            <ambientLight intensity={0.5} />
-            <OrbitControls enableZoom={false} enableRotate={true} enablePan={false} />
-            <Suspense fallback={null}>  
-              <Model />
-            </Suspense>
-          
-            <Environment preset='sunset' />
-          </Canvas>
-         
-    </div>
-    <div className='d-flex justify-content-center'>
-  <Button style={{position: 'relative', top: -280}} onClick={() => setShowToast(!showToast)}>Show Message!</Button>
-  </div>
-     
-    <AppFooter />
+          <ambientLight intensity={0.5} />
+          <OrbitControls
+            enableZoom={false}
+            enableRotate={true}
+            enablePan={false}
+          />
+          <Suspense fallback={null}>
+            <Model />
+          </Suspense>
+
+          <Environment preset="sunset" />
+        </Canvas>
+      </div>
+      <div className="d-flex justify-content-center">
+        <Button
+          style={{ position: 'relative', top: -280 }}
+          onClick={() => setShowToast(!showToast)}
+        >
+          Show Message!
+        </Button>
+      </div>
+
+      <AppFooter />
     </>
-   
   );
-}   
+}
 
-export default Home;    
-
+export default Home;
