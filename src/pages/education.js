@@ -1,78 +1,92 @@
-import WithSubnavigation from "../components/NavBar";
-import AppFooter from "../components/AppFooter";
-import { useEffect } from "react";
+import WithSubnavigation from '../components/NavBar';
+import AppFooter from '../components/AppFooter';
+import { useEffect } from 'react';
 import { createClient } from '@supabase/supabase-js';
-import { useState } from "react";
-import { Card } from "reactstrap";
+import { useState } from 'react';
+import { Card } from 'reactstrap';
 
+const educationData = [
+  {
+    id: 5,
+    name: 'University of Wolverhampton',
+    course: 'BSc (Hons) Computer Science',
+    logoURL:
+      'https://otcbtatespfbfgggujqw.supabase.co/storage/v1/object/public/images/woverhampton.svg',
+    dateText: '2023 - 2024',
+  },
+  {
+    id: 4,
+    name: 'BMET',
+    course: 'Cloud Computing (Software Development) HND',
+    logoURL:
+      'https://otcbtatespfbfgggujqw.supabase.co/storage/v1/object/public/images/bmet-logo.png',
+    dateText: '2022 - 2023',
+  },
+  {
+    id: 3,
+    name: 'BMET',
+    course: 'Cloud Computing (Software Development) HNC ',
+    logoURL:
+      'https://otcbtatespfbfgggujqw.supabase.co/storage/v1/object/public/images/bmet-logo.png',
+    dateText: '2021 - 2022',
+  },
+];
 
+// const supabase = createClient(process.env.REACT_APP_SUPABASE_URL, process.env.REACT_APP_SUPABASE_API_KEY);
 
-const supabase = createClient(process.env.REACT_APP_SUPABASE_URL, process.env.REACT_APP_SUPABASE_API_KEY);
+// async function getEducation() {
+//   const { data: education, error } = await supabase
+//     .from('education')
+//     .select('*').order('id', { ascending: false });
+//   if (error) console.log('error', error);
+//   console.log(education);
+//   return education;
 
-async function getEducation() {
-  const { data: education, error } = await supabase
-    .from('education')
-    .select('*').order('id', { ascending: false });
-  if (error) console.log('error', error);
-  console.log(education);
-  return education;
-
-}
+// }
 
 function Education() {
   const [education, setEducation] = useState([]);
   useEffect(() => {
-    getEducation().then(data => setEducation(data));
-  }
-  , []);
+    setEducation(educationData);
+  }, []);
   if (!education) {
     return (
-      
       <>
-       <WithSubnavigation />
-       <div className="container vh-100">
-        <h1>Loading...</h1>
-      </div>
-     
+        <WithSubnavigation />
+        <div className="container vh-100">
+          <h1>Loading...</h1>
+        </div>
       </>
-     
-    )
+    );
   }
-    return (
-      <>
+  return (
+    <>
       <WithSubnavigation />
-      <div className="container" style={{height: 'max-content'}}>
+      <div className="container" style={{ height: 'max-content' }}>
         <h1>Education</h1>
         <ul>
           {education.map(education => (
-           <Card style={{ marginBottom: 20}} key={education.id}>
-            <div className="card-header">
-            <h1>{education.name}</h1>
-            </div>
-            <div className="card-body">
-            <img style={{maxWidth: "200px"}} src={education.logoURL} />
-            <h2>{education.course}</h2>
-            </div>
-            
-            <div className="card-footer">
-            <h3>{education.dateText}</h3>
-            </div>
-           
-            
-            
+            <Card style={{ marginBottom: 20 }} key={education.id}>
+              <div className="card-header">
+                <h1>{education.name}</h1>
+              </div>
+              <div className="card-body">
+                <img style={{ maxWidth: '200px' }} src={education.logoURL} />
+                <h2>{education.course}</h2>
+              </div>
+
+              <div className="card-footer">
+                <h3>{education.dateText}</h3>
+              </div>
             </Card>
-            
           ))}
         </ul>
-       
       </div>
-      <div >
+      <div>
         <AppFooter />
       </div>
-    
-      </>
-     
-    );
-  }   
-  
-  export default Education;    
+    </>
+  );
+}
+
+export default Education;
