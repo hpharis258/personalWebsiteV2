@@ -16,58 +16,60 @@ import Contact from './pages/contact';
 import About from './pages/about';
 import '../src/CDN/app.css';
 import Cookies from './pages/cookies';
+import FAQ from './pages/FAQ';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
-
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "/education",
+    path: '/education',
     element: <Education />,
   },
   {
-    path: "/experience",
+    path: '/experience',
     element: <Experience />,
   },
   {
-    path: "/certifications",
+    path: '/certifications',
     element: <Certifications />,
   },
   {
-    path: "/projects",
+    path: '/projects',
     element: <Projects />,
   },
   {
-    path: "/youtube",
+    path: '/youtube',
     element: <Youtube />,
   },
   {
-    path: "/posts",
+    path: '/posts',
     element: <Posts />,
   },
   {
-    path: "/contact",
+    path: '/contact',
     element: <Contact />,
   },
   {
-    path: "/about",
+    path: '/FAQ',
+    element: <FAQ />,
+  },
+  {
+    path: '/about',
     element: <About />,
   },
   {
-    path: "/cookies",
+    path: '/cookies',
     element: <Cookies />,
   },
 ]);
 
-
 root.render(
   <StrictMode>
-    
     <RouterProvider router={router} />
   </StrictMode>
 );
