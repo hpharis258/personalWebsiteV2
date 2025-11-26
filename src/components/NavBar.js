@@ -22,7 +22,7 @@ export default function WithSubnavigation() {
                 <Nav.Link href="/certifications">Certifications</Nav.Link>
                 <Nav.Link href="/projects">Projects</Nav.Link>
                 <Nav.Link href="/youtube">Youtube</Nav.Link>
-                <Nav.Link href="/posts">Posts</Nav.Link>
+                {/* <Nav.Link href="/posts">Posts</Nav.Link> */}
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 <Nav.Link href="/FAQ">FAQ</Nav.Link>
                 <Nav.Link href="/about">About</Nav.Link>
