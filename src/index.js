@@ -11,7 +11,6 @@ import Experience from './pages/experience';
 import Certifications from './pages/certifications';
 import Projects from './pages/projects';
 import Youtube from './pages/youtube';
-import Posts from './pages/posts';
 import Contact from './pages/contact';
 import About from './pages/about';
 import '../src/CDN/app.css';
@@ -45,10 +44,6 @@ const router = createBrowserRouter([
   {
     path: '/youtube',
     element: <Youtube />,
-  },
-  {
-    path: '/posts',
-    element: <Posts />,
   },
   {
     path: '/contact',
